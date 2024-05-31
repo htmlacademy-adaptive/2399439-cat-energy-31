@@ -1,0 +1,15 @@
+.main {
+  width: 100%;
+
+  @include mediaTab {
+    min-width: 100%;
+  }
+}
+
+//media Desk
+
+@include mediaDesk {
+  .main {
+    min-width: 100%;
+  }
+}

@@ -1,1 +1,18 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 0 20px;
+
+  @include mediaTab {
+    padding: 0 30px;
+  }
+
+  @include mediaDesk {
+    padding: 0 110px;
+  }
+}
